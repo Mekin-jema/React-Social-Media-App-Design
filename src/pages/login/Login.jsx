@@ -21,14 +21,14 @@ const Login = () => {
         <div className="left">
           <h1>Social Media App. </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-            dicta.
+            This is Our social media app. Here you can share your thoughts and
+            connect with other people.
           </p>
           <span>Don't you have an account ?</span>
           <button>Register</button>
         </div>
         <div className="right">
-          <h1 style={{ color: "green" }}>Login</h1>
+          <h1>Login</h1>
           <span>Login to your account</span>
           <form onSubmit={handleLogin}>
             <input
