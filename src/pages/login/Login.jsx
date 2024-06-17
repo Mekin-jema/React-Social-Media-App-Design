@@ -1,6 +1,6 @@
 import "./login.scss";
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -25,7 +25,9 @@ const Login = () => {
             connect with other people.
           </p>
           <span>Don't you have an account ?</span>
-          <button>Register</button>
+          <Link to="/register">
+            <button>Register</button>
+          </Link>
         </div>
         <div className="right">
           <h1>Login</h1>
