@@ -1,0 +1,132 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .img {
+    position: relative;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .cover {
+      margin-left: 15px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .ProfilePic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: 150px;
+      border: 5px solid white;
+    }
+  }
+
+  .ProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    width: 100%;
+    .userInfo {
+      display: flex;
+      flex-direction: row;
+      //   align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      //   margin-left: 5px;
+      width: 70%;
+      margin: 0 50px 0 50px;
+
+      .left {
+        // margin: right;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        a {
+          color: inherit;
+          &:hover {
+            color: #0073b1;
+          }
+        }
+      }
+
+      .center {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        // margin-left: 10px;
+        gap: 10px;
+        .items {
+          display: flex;
+          //   align-items: center;
+          justify-content: space-between;
+        }
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          margin: 5px 0;
+
+          span {
+            font-size: 16px;
+          }
+        }
+
+        button {
+          padding: 10px 20px;
+          background-color: #0073b1;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+          width: 100px;
+
+          &:hover {
+            background-color: #005582;
+          }
+        }
+      }
+    }
+  }
+
+  .rights {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    svg {
+      cursor: pointer;
+      &:hover {
+        color: #0073b1;
+      }
+    }
+  }
+}
+
+.posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
