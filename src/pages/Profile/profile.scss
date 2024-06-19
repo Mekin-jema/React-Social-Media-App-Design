@@ -122,6 +122,13 @@
     }
   }
 }
+.storiesContainer {
+  display: flex;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  justify-content: space-between;
+}
 
 .posts {
   width: 100%;

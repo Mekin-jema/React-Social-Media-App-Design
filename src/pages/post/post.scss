@@ -1,20 +1,24 @@
 .post {
-  border: 1px solid #e1e1e1;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  margin: 20px 0;
-  padding: 20px;
-  background: #c5c3c3;
-  width: 400px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  width: 40%;
+  align-items: center;
+  margin-left: 300px;
 
   .postHeader {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 
     .userProfilePic {
-      border-radius: 50%;
       width: 40px;
       height: 40px;
+      border-radius: 50%;
       margin-right: 10px;
+      object-fit: cover;
     }
 
     .userName {
@@ -24,8 +28,9 @@
 
   .postImage {
     width: 100%;
-    margin: 20px 0;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   .postActions {
@@ -44,6 +49,7 @@
 
   .postLikes {
     font-weight: bold;
+    margin-bottom: 10px;
   }
 
   .postComments {
@@ -54,27 +60,23 @@
 
   .commentForm {
     display: flex;
-    gap: 10px;
+    align-items: center;
 
     input {
-      flex-grow: 1;
+      flex: 1;
       padding: 10px;
-      border: 1px solid #e1e1e1;
+      margin-right: 10px;
+      border: 1px solid #ddd;
       border-radius: 5px;
     }
 
     button {
-      padding: 10px 20px;
+      padding: 10px 15px;
+      border: none;
       background-color: #007bff;
       color: #fff;
-      border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #0056b3;
-      }
     }
   }
 }

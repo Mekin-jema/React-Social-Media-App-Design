@@ -4,15 +4,12 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import PinterestIcon from "@mui/icons-material/Pinterest";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import LanguageIcon from "@mui/icons-material/Language";
 import { EmailOutlined, MoreVert } from "@mui/icons-material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Post from "../post/Post";
+import SocialMediaPostPage from "../post/SocialMediaPostPage";
+import SocialMediaStoryPost from "../Story/SocialMediaStoryPost";
 
 const Profile = () => {
   const posts = [
@@ -25,7 +22,6 @@ const Profile = () => {
       likes: 10,
       comments: ["Nice post!", "Great picture!", "Love it!"],
     },
-
     {
       userProfilePic:
         "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
@@ -43,6 +39,29 @@ const Profile = () => {
         "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
       likes: 10,
       comments: ["Nice post!", "Great picture!", "Love it!"],
+    },
+  ];
+
+  const stories = [
+    {
+      id: 1,
+      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+      userName: "Alice",
+    },
+    {
+      id: 2,
+      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+      userName: "Alice",
+    },
+    {
+      id: 3,
+      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+      userName: "Alice",
+    },
+    {
+      id: 4,
+      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+      userName: "Alice",
     },
   ];
 
@@ -64,16 +83,16 @@ const Profile = () => {
         <div className="userInfo">
           <div className="left">
             <a href="https://www.facebook.com/">
-              <FacebookIcon fontsize="large" />
+              <FacebookIcon fontSize="large" />
             </a>
             <a href="https://www.linkedin.com/">
-              <LinkedInIcon fontsize="large" />
+              <LinkedInIcon fontSize="large" />
             </a>
             <a href="https://www.telegram.com/">
-              <TelegramIcon fontsize="large" />
+              <TelegramIcon fontSize="large" />
             </a>
             <a href="https://www.twitter.com/">
-              <TwitterIcon fontsize="large" />
+              <TwitterIcon fontSize="large" />
             </a>
           </div>
           <div className="center">
@@ -98,9 +117,10 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <SocialMediaStoryPost />
       <div className="posts">
         {posts.map((post, index) => (
-          <Post key={index} post={post} />
+          <SocialMediaPostPage key={index} post={post} />
         ))}
       </div>
     </div>
