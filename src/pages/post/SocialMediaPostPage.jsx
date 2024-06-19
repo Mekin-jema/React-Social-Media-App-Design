@@ -66,6 +66,19 @@ const SocialMediaPostPage = () => {
           alt="Post"
           className="postImage"
         />
+        <div className="postHeader">
+          <img
+            src="https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg"
+            alt="User"
+            className="userProfilePic"
+          />
+          <span className="userName">Mekin J.</span>
+        </div>
+        <img
+          src="https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg"
+          alt="Post"
+          className="postImage"
+        />
         <div className="postActions">
           <span onClick={handleLike}>
             {liked ? <Favorite className="liked" /> : <FavoriteBorder />}

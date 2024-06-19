@@ -8,7 +8,9 @@ import RightBar from "./components/rightbar/RightBar";
 import Home from "./pages/home/Home";
 import Profile from "./pages/Profile/Profile";
 import { Navigate } from "react-router-dom";
+import User from "./pages/user/User";
 import SocialMediaStoryPost from "./pages/Story/SocialMediaStoryPost";
+import SocialMediaPostPage from "./pages/post/SocialMediaPostPage";
 const App = () => {
   const currentUser = false;
   const ProtectedRoute = ({ children }) => {
@@ -32,8 +34,8 @@ const App = () => {
       element: <Profile />,
     },
     {
-      path: "/story",
-      element: <SocialMediaStoryPost />,
+      path: "/user",
+      element: <User />,
     },
   ]);
   return (

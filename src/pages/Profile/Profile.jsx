@@ -42,28 +42,28 @@ const Profile = () => {
     },
   ];
 
-  const stories = [
-    {
-      id: 1,
-      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
-      userName: "Alice",
-    },
-    {
-      id: 2,
-      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
-      userName: "Alice",
-    },
-    {
-      id: 3,
-      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
-      userName: "Alice",
-    },
-    {
-      id: 4,
-      img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
-      userName: "Alice",
-    },
-  ];
+  // const stories = [
+  //   {
+  //     id: 1,
+  //     img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+  //     userName: "Alice",
+  //   },
+  //   {
+  //     id: 2,
+  //     img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+  //     userName: "Alice",
+  //   },
+  //   {
+  //     id: 3,
+  //     img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+  //     userName: "Alice",
+  //   },
+  //   {
+  //     id: 4,
+  //     img: "https://t3.ftcdn.net/jpg/04/58/64/76/360_F_458647644_QMgurK1ooH0uxNWuyelKdvIl5kysrPbP.jpg",
+  //     userName: "Alice",
+  //   },
+  // ];
 
   return (
     <div className="profile">
@@ -117,7 +117,6 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <SocialMediaStoryPost />
       <div className="posts">
         {posts.map((post, index) => (
           <SocialMediaPostPage key={index} post={post} />
